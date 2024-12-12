@@ -1,23 +1,36 @@
 <template>
-  <h3>Welcome {{getUsername()}}</h3>
-
+  <div class="dashboard-buttons">
+    <button class="btn">Join Map Queue</button>
+    <button class="btn">Access Previous Paths</button>
+    <button class="btn disabled">Pair New Device</button>
+  </div>
 </template>
 
 <script>
-import {  GET_USERNAME } from "../store/storeconstants";
 export default {
-  name: 'Landing',
-  data() {
-    return {
-    }
-  },
-  methods:{
-    getUsername() {
-      return this.$store.getters[`auth/${GET_USERNAME}`]
-    },
-  }
-
-
-
-}
+  name: "DashboardButtons",
+};
 </script>
+
+<style scoped>
+.dashboard-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+.btn {
+  background-color: #0033cc;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn.disabled {
+  background-color: #b3c6ff;
+  cursor: not-allowed;
+}
+</style>
