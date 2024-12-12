@@ -1,16 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/BLUPotentialLogo.png" style="width: 200px; height: 200px;">
-  <LoginView/>
+  <img alt="BLU logo" src="./assets/BLUPotentialLogo.png" >
+ <RouterView/>
 </template>
 
 <script>
-import LoginView from "@/components/LoginView.vue";
+//import LoginView from "@/components/LoginView.vue";
 
 
 export default {
   name: 'App',
   components: {
-    LoginView,
+    //LoginView,
   }
 }
 </script>
