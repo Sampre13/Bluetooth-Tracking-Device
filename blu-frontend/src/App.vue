@@ -1,5 +1,5 @@
 <template>
-  <img alt="Vue logo" src="./assets/BLUPotentialLogo.png">
+  <img alt="Vue logo" src="./assets/BLUPotentialLogo.png" style="width: 200px; height: 200px;">
   <LoginView/>
 </template>
 
