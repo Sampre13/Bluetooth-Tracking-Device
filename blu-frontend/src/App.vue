@@ -4,14 +4,13 @@
 </template>
 
 <script>
-import LoginView from "@/components/LoginView.vue";
-
+import LoginView from "@/views/Login.vue";
 
 export default {
   name: 'App',
   components: {
     LoginView,
-  }
+  },
 }
 </script>
 
