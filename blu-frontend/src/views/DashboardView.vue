@@ -2,8 +2,11 @@
 export default {
   name: "DashboardView",
   methods: {
-    goToAbout() {
-      this.$router.push('/about')
+    goToLogin() {
+      this.$router.push({ name: 'login' });
+    },
+    goToRegisterAccount() {
+      this.$router.push({ name: 'register' });
     },
   },
 }
@@ -11,5 +14,6 @@ export default {
 
 <template>
   <h2>DashboardView</h2>
-  <button @click="goToAbout">Go to About</button>
+  <button @click="goToLogin">Go to Login</button>
+  <button @click="goToRegisterAccount">Register an Account</button>
 </template>
