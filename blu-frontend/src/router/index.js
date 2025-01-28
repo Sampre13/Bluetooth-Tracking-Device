@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {createRouter, createWebHistory} from 'vue-router'
 
 import DashboardView from '@/views/DashboardView.vue'
@@ -17,3 +18,28 @@ const router = createRouter({
 })
 
 export default router
+=======
+import { createWebHistory, createRouter } from "vue-router";
+
+const routes =  [
+    {
+        path: "/",
+        component: () => import('../components/LoginView.vue'),
+    },
+    {
+        path: "/home",
+        component: () => import('../components/Landing.vue'),
+    },
+
+]
+
+const router = createRouter({
+    history: createWebHistory(process.env.BASE_URL),
+    routes: routes,
+    linkActiveClass: 'active'
+})
+
+
+
+export default router;
+>>>>>>> main
