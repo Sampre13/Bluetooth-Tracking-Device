@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <img alt="Vue logo" src="./assets/BLUPotentialLogo.png" style="width: 200px; height: 200px;">
   <main>
     <h1>Hello</h1>
@@ -12,14 +11,11 @@
 export default {
   name: 'App',
   components: {
-<<<<<<< HEAD
 
   },
-=======
     //LoginView,
   }
->>>>>>> main
-}
+
 </script>
 
 <style>
