@@ -43,7 +43,7 @@ export default {
       if (confirm("Are you sure you want to delete your profile?")){
         try {
           // FETCH USER URL
-          await axios.post("http://localhost:8080/auth/deleteProfile");
+          await axios.delete(`http://localhost:8080/users/${this.user.email}`);
           alert("Profile deleted successfully!");
         } catch(error) {
           console.error("Error deleting profile", error);
