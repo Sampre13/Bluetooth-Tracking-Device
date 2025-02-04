@@ -11,6 +11,9 @@ export default {
     },
     goToPathHistory() {
       this.$router.push({ name: 'pathhistory'});
+    },
+    goToPairDevice() {
+      this.$router.push({ name: 'pairdevice' });
     }
   },
 }
@@ -21,8 +24,8 @@ export default {
 
   <div class="dashboard-buttons">
     <button @click='goToMapQueue()' :class="['btn', 'btn-map']">Join Map Queue</button>
-    <button @click='goToPathHistory' :class="['btn', 'btn-paths']">Access Previous Paths</button>
-    <button class="btn btn-pairing">Pair New Device</button>
+    <button @click='goToPathHistory()' :class="['btn', 'btn-paths']">Access Previous Paths</button>
+    <button @click='goToPairDevice()'  :class="['btn', 'btn-pairing']">Pair New Device</button>
   </div>
 
 

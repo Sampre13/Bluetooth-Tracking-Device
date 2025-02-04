@@ -8,3 +8,4 @@ export  { default as RegisterView } from './RegisterView';
 export  { default as LandingView } from './LandingView';
 export { default as MapQueueView } from './MapQueueView.vue';
 export { default as PathHistoryView } from './PathHistoryView.vue';
+export { default as PairDeviceView } from './PairDeviceView.vue'
