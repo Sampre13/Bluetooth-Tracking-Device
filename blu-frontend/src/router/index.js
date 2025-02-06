@@ -1,7 +1,17 @@
 // Storing routes here to all navigation
 import {createRouter, createWebHashHistory} from 'vue-router'
 
-import {DashboardView, AboutView, RegisterView, LoginView, LandingView, MapQueueView, PathHistoryView, PairDeviceView} from "@/views";
+import {
+    DashboardView,
+    AboutView,
+    RegisterView,
+    LoginView,
+    LandingView,
+    MapQueueView,
+    PathHistoryView,
+    PairDeviceView,
+    UserVerificationView
+} from "@/views";
 
 
 const routes = [
@@ -12,7 +22,8 @@ const routes = [
     { path: '/mapqueue', name: "mapqueue", component: MapQueueView },
     { path: '/pathhistory', name: "pathhistory", component: PathHistoryView },
     { path: '/pairdevice', name: "pairdevice", component: PairDeviceView },
-    { path: '/', name: "landing", component: LandingView }
+    { path: '/', name: "landing", component: LandingView },
+    { path: '/userverification', name: "userverification", component: UserVerificationView }
 ]
 
 const router = createRouter({

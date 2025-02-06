@@ -32,6 +32,9 @@ export default {
         this.output = "Username and password can not be empty"
       }
     },
+    goToVerification() {
+
+    }
   },
 }
 </script>

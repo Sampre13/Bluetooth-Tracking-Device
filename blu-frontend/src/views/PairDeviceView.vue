@@ -12,6 +12,7 @@ export default {
 </script>
 
 <template>
+  <h1>Pair New Device</h1>
   <div>
     <button @click="goToDashboard()">Go To Dashboard</button>
   </div>

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "vuetify": "^3.7.11",
     "vuex": "^4.0.2"
   }
 }

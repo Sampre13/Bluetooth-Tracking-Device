@@ -11,6 +11,7 @@ export default {
 </script>
 
 <template>
+  <h1>Map Queue</h1>
   <div>
     <button @click="goToDashboard()">Go To Dashboard</button>
   </div>
