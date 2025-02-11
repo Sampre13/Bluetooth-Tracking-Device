@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Bluetooth-Tracking-Device.iml" filepath="$PROJECT_DIR$/.idea/Bluetooth-Tracking-Device.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blu-frontend/src/CSS/CSS.iml" filepath="$PROJECT_DIR$/blu-frontend/src/CSS/CSS.iml" />
     </modules>
   </component>
 </project>

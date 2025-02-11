@@ -2,6 +2,8 @@
 import {createRouter, createWebHashHistory} from 'vue-router'
 
 import {DashboardView, AboutView, RegisterView, LoginView, LandingView, MapQueueView, PathHistoryView, PairDeviceView} from "@/views";
+import {NavBar} from "@/components";
+
 
 
 const routes = [
@@ -12,7 +14,8 @@ const routes = [
     { path: '/mapqueue', name: "mapqueue", component: MapQueueView },
     { path: '/pathhistory', name: "pathhistory", component: PathHistoryView },
     { path: '/pairdevice', name: "pairdevice", component: PairDeviceView },
-    { path: '/', name: "landing", component: LandingView }
+    { path: '/', name: "landing", component: LandingView },
+    {path: '/navbar', name: "navbar", component: NavBar}
 ]
 
 const router = createRouter({
