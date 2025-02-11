@@ -12,11 +12,11 @@
       Login
     </button>
   </form>
-  <h3> Output: {{this.output}}</h3>
 </template>
 
 <script>
-import { SET_AUTHENTICATION, SET_USERNAME } from "@/store/storeconstants";
+import {SET_AUTHENTICATION, SET_TOKEN, SET_USERNAME} from "@/store/storeconstants";
+import axios from "axios";
 
 export default {
   name: 'LoginView',
@@ -32,12 +32,20 @@ export default {
   methods: {
     login(){
       if (this.input.username !== "" || this.input.password !== "") {
-        this.output = "Authentication complete"
-        //stores true to the set_authentication and username to the set_username
-        this.$store.commit(`auth/${SET_AUTHENTICATION}`, true);
-        this.$store.commit(`auth/${SET_USERNAME}`, this.input.username);
-        this.output = "Authentication complete."
-        this.$router.push('/home')
+        axios.post("/login", this.input)
+            .then(res => {
+              this.output = "Authentication complete"
+              //stores true to the set_authentication and username to the set_username
+              this.$store.commit(`auth/${SET_AUTHENTICATION}`, true);
+              this.$store.commit(`auth/${SET_USERNAME}`, this.input.username);
+              this.$store.commit(`auth/${SET_TOKEN}`, res.data.token);
+              this.output = "Authentication complete."
+              this.$router.push('/dashboard')
+            })
+            .catch(err => {
+              console.log(err)
+
+            })
       } else {
         this.$store.commit(`auth/${SET_AUTHENTICATION}`, false);
         this.output = "Username and password can not be empty"

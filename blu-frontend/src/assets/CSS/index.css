@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar-header{
+    @apply sm:px-0
+    px-5
+    py-5
+    md:py-0
+    md:px-7
+    lg:px-[120px]
+    bg-Grayscale
+    md:bg-Grayscale
+    relative
+    z-10;
+}
+
+.nav-box{
+    @apply flex flex-wrap
+    items-center
+    justify-between
+    w-full
+    md:py-0
+    text-lg
+    text-gray-700
+    bg-transparent
+    md:h-[80px];
+}
+
