@@ -13,6 +13,7 @@ export default {
 </script>
 
 <template>
+  <h1>Hello!</h1>
   <button @click="goToLogin">Go to Login</button>
   <button @click="goToRegisterAccount">Register an Account</button>
 

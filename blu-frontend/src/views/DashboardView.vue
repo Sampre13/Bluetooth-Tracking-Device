@@ -36,16 +36,19 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 45px;
   margin-top: 50px;
 }
 .btn {
   color: white;
   padding: 15px 30px;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 10px;
+  font-size: 40px;
+  font-family: Avenir;
   cursor: pointer;
+  width: 473px;
+  height: 114px;
 }
 
 .btn-map {
